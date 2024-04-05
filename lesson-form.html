@@ -31,19 +31,19 @@
             <div>
                 <div>
                     <label for="name">Name</label>
-                    <input type="text" name="firstName" placeholder="fill your name">
+                    <input type="text" name="firstName" placeholder="fill your name" required>
                 </div>
                 <div>
                     <label for="lastname">Lastname</label>
-                    <input type="text" name="lastName" placeholder="fill your lastname">
+                    <input type="text" name="lastName" placeholder="fill your lastname" required>
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" value="@gmail.com">
+                    <input type="email" name="email" value="@gmail.com" required>
                 </div>
                 <div>
                     <label for="password">Password</label>
-                    <input type="password" name="password">
+                    <input type="password" name="password" required>
                 </div>
                 <div>
                     <label for="address">Address</label>
@@ -56,6 +56,54 @@
                 <div>
                     <label for="birthdate">Birthdate</label>
                     <input type="date" name="birthDate">
+                </div>
+                <div>
+                    <label for="tel">Tel.</label>
+                    <input type="tel" name="tel" value="1121" readonly>
+                </div>
+                <div>
+                    <label for="favoriteColor">Favorite color</label>
+                    <input type="color" name="favoriteColor">
+                </div>
+                <div>
+                    <label for="rangeNum">Range</label>
+                    <input type="range" name="rangeNumber" min = "10" max="25" value="11">
+                </div>
+                <div>
+                    <label for="education">Education</label>
+                    <select name="education" id="">
+                        <option value="diploma">Diploma</option>
+                        <option value="bachelor" selected>Bachelor degree</option>
+                        <option value="master">Master degree</option>
+                        <option value="doctoral">Doctoral  degree</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="gender">Gender</label>
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Customize
+                </div>
+                <div>
+                    <label for="language">Language</label>
+                    <input type="checkbox" name="language">TH
+                    <input type="checkbox" name="language">ENG
+                    <input type="checkbox" name="language">CHN
+                    <input type="checkbox" name="language">JPY
+                    <input type="checkbox" name="language">SPN
+                </div>
+                <div>
+                    <label for="inputFile">Input file</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <label for="website">Website</label>
+                    <input type="url">
+                </div>
+                <div>
+                    <button type="submit">submit</button>
+                    <!-- or you can you         <button type="submit">submit</button>           -->
+                    <input type="reset" name="" id="" value="reset">
                 </div>
             </div>
         </form>
