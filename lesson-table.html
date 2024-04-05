@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Table</title>
+
+    <!-- reference CSS file-->
+    <style>
+        .mark-blue{
+            background-color: #cce5ff; /* Light blue */
+        }
+        .mark-green{
+            background-color: #d4edda; /* Light green */
+        }
+        .mark-pink{
+            background-color: #f8d7da; /* Light pink */
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>TABLE LESSON</h1>
+    <hr>
+
+    <!-- table lesson ------------------------------------------------------------->
+
+    <!-- explain -->
+    <h3>tags</h3>
+    <ul type="circle">
+        <li>&lt;table&gt;&lt;/table&gt;&nbsp;   = declare for creating table</li>
+        <li>&lt;thead&gt;&lt;/thead&gt;&nbsp;   = define content in header/li>
+        <li>&lt;tbody&gt;&lt;/tbody&gt;&nbsp;   = contend in body</li>
+        <li>&lt;tfoot&gt;&lt;/tfoot&gt;&nbsp;   = content in bottom of table</li>
+        <li>&lt;tr&gt;&lt;/tr&gt;&nbsp;         = define row</li>
+        <li>&lt;td&gt;&lt;/td&gt;&nbsp;         = define colum</li>
+        <li>&lt;th&gt;&lt;/th&gt;&nbsp;         = column in header</li>
+    </ul>
+    <h3>attribute</h3>
+    <ul type="circle">
+        <li>border="0"          &nbsp;&nbsp;&nbsp;===> table border</li>
+        <li>width="%"           &nbsp;&nbsp;&nbsp;===> width</li>
+        <li>bgcolor="white"     &nbsp;&nbsp;&nbsp;===> background color</li>
+    </ul>
+
+    <hr>
+    <!-- structure -->
+    <h3>structure</h3>
+
+    <h4>code</h4>
+
+    <pre>
+        <code>
+            &lt;table <mark>border="1"</mark>&gt;
+                &lt;thead&gt;
+                    &lt;th&gt;<span class="mark-green">H1</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">H2</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">H3</span>&lt;/th&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r1-c1</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r1-c2</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r1-c3</span></mark>&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r2-c1</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r2-c2</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">r2-c3</span></mark>&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+                &lt;tfoot&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;<mark><span class="mark-green">F1</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">F2</span></mark>&lt;/td&gt;
+                        &lt;td&gt;<mark><span class="mark-green">F3</span></mark>&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+        </code>
+    </pre>
+
+    <h4>complie</h4>
+    <table border="1">
+        <thead>
+            <th>H1</th>
+            <th>H2</th>
+            <th>H3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>r1-c1</td>
+                <td>r1-c2</td>
+                <td>r1-c3</td>
+            </tr>
+            <tr>
+                <td>r2-c1</td>
+                <td>r2-c2</td>
+                <td>r2-c3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>F1</td>
+                <td>F1</td>
+                <td>F1</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <hr>
+
+    <!-- example -->
+    <h3>example table</h3>
+    <table border="1">
+        <thead>
+            <th>No.</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>picture</th>
+            <th>link</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>mouse</td>
+                <td>100</td>
+                <td>0</td>
+                <td>
+                    <img src="https://th-media.apjonlinecdn.com/catalog/product/h/p/hp_240_bluetooth_mouse_jetblack_coreset_topdown_1.png" 
+                    alt="mouse" widht="50px" height="50px">
+                </td>
+                <td>
+                    <a href="#">link</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>keyboard</td>
+                <td>200</td>
+                <td>20</td>
+                <td>
+                    <img src="https://mediam.dotlife.store/media/catalog/product/cache/3b7e899159f673788675d87d1d929a98/k/e/keychron_k3.003_1.jpeg" 
+                    alt="keyboard" widht="50px" height="50px">
+                </td>
+                <td>
+                    <a href="#">link</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>cpu</td>
+                <td>150</td>
+                <td>5</td>
+                <td>
+                    <img src="https://f.ptcdn.info/044/070/000/qcy7264ianpzXIwiG6w-o.jpg" 
+                    alt="cpu" widht="50px" height="50px">
+                </td>
+                <td>
+                    <a href="#">link</a>
+                </td>
+            </tr>
+        </body>
+        <tfoot>
+            <tr>
+                <td>sum</td>
+                <td>-</td>
+                <td>-</td>
+                <td>25</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+    <!------------------------------------------------------------------------------>
+
+    <!-- Back -->
+    <br><br>
+    <a href="index.html">
+        <img src="source/img/home.png" alt="" width="50px" height="50px">
+    </a>
+
+</body>
+</html>
