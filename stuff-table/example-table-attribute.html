@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Table</title>
+
+    <style>
+        .mark-blue{
+            background-color: #cce5ff; /* Light blue */
+        }
+        .mark-green{
+            background-color: #d4edda; /* Light green */
+        }
+        .mark-pink{
+            background-color: #f8d7da; /* Light pink */
+        }
+        .bg-html{
+            background-color: #FAFAD2; /* Light pink */
+        }
+        .bg-head{
+            background-color: #7FFFD4; /* Light pink */
+        }
+        .bg-body{
+            background-color: #90EE90; /* Light pink */
+        }
+        .bg-foot{
+            background-color: #FFDEAD; /* Light pink */
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>TABLE ATTRIBUTE LESSON</h1>
+    <hr>
+
+    <!-- tags lesson ------------------------------------------------------------->
+    <h4>code</h4>
+    
+    <pre>
+        <code>
+            <div class="bg-html">
+            &lt;table <mark>border="1"</mark> <mark>width="50%"</mark> <mark>cellspacing="5"</mark> <mark>cellpadding="10"</mark>&gt;
+
+                <div class="bg-head">
+                &lt;thead <mark>align="center"</mark> <mark>bgcolor="#ADFF2F"</mark>&gt;
+                    &lt;th&gt;<span class="mark-green">No.</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">Item</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">Price</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">Qty</span>&lt;/th&gt;
+                    &lt;th&gt;<span class="mark-green">link</span>&lt;/th&gt;
+                &lt;/thead&gt;
+                </div>
+
+                <div class="bg-body">
+                &lt;tbody <mark>align="center"</mark>&gt;
+                    &lt;tr&gt;
+                        &lt;td <mark>bgcolor="#DCDCDC"</mark>&gt;<span class="mark-green">1.</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">CPU</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">25,000</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">109</span>&lt;/td&gt;
+                        &lt;td <mark>rowspan="3"</mark>&gt;
+                            <span class="mark-green">&lt;a href="#"&gt;link&lt;/a&gt;</span>
+                        &lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td <mark>bgcolor="#DCDCDC"</mark>&gt;<span class="mark-green">2.</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">Keyboard</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">1,800</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">1,870</span>&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td <mark>bgcolor="#DCDCDC"</mark>&gt;<span class="mark-green">3.</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">Mouse</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">1,200</span>&lt;/td&gt;
+                        &lt;td&gt;<span class="mark-green">2,300</span>&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+                </div>
+                
+                <div class="bg-foot">
+                &lt;tfoot <mark>align="center"</mark> <mark>bgcolor="#FFFFF0"</mark>&gt;
+                    &lt;tr&gt;
+                        &lt;td <mark>colspan="3"</mark> <mark>bgcolor="#F0E68C"</mark>&gt;<span class="mark-green">sum</span>&lt;/td&gt;
+                        &lt;td <mark>colspan="2"</mark>&gt;<span class="mark-green">-</span>&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+                </div>
+                
+            &lt;/table&gt;
+            </div>
+        </code>
+    </pre>
+
+    <h4>complie</h4>
+
+    <table border="1" width="50%" cellspacing="5" cellpadding="10">
+
+        <thead align="center" bgcolor="#ADFF2F">
+            <th>No.</th>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>link</th>
+        </thead>
+
+        <tbody align="center">
+            <tr>
+                <td bgcolor="#DCDCDC">1.</td>
+                <td>CPU</td>
+                <td>25,000</td>
+                <td>109</td>
+                <td rowspan="3">
+                    <a href="#">link</a>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#DCDCDC">2.</td>
+                <td>Keyboard</td>
+                <td>1,800</td>
+                <td>1,870</td>
+            </tr>
+            <tr>
+                <td bgcolor="#DCDCDC">3.</td>
+                <td>Mouse</td>
+                <td>1,200</td>
+                <td>2,300</td>
+            </tr>
+        </tbody>
+        
+        <tfoot align="center" bgcolor="#FFFFF0">
+            <tr>
+                <td colspan="3" bgcolor="#F0E68C">sum</td>
+                <td colspan="2">-</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+
+    <hr>
+
+    <!------------------------------------------------------------------------------>
+
+    <!-- Back -->
+    <br><br>
+    <div style="display:flex">  
+        <a href="../lesson-table.html" style="width: 50px; height: 50px;">   <!--this is more responsive that set size directly in the picture-->
+            <img src="../../source/img/previous.png" alt="" width="100%" height="100%">
+        </a>
+        &nbsp;
+        <a href="../index.html">
+            <img src="../../source/img/home.png" alt="" width="50px" height="50px">
+        </a>
+    </div>
+
+</body>
+</html>

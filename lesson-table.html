@@ -43,7 +43,14 @@
         <li>border="0"          &nbsp;&nbsp;&nbsp;===> table border</li>
         <li>width="%"           &nbsp;&nbsp;&nbsp;===> width</li>
         <li>bgcolor="white"     &nbsp;&nbsp;&nbsp;===> background color</li>
+        <li>colspan="x"         &nbsp;&nbsp;&nbsp;===> expand size of column</li>
+        <li>rowspan="x"         &nbsp;&nbsp;&nbsp;===> expand size of row</li>
+        <li>align="left"        &nbsp;&nbsp;&nbsp;===> align</li>
+        <li>center="right"      &nbsp;&nbsp;&nbsp;===> center</li>
+        <li>cellpadding="5"     &nbsp;&nbsp;&nbsp;===> expand space from inside</li>
+        <li>cellspacing="5"     &nbsp;&nbsp;&nbsp;===> expand border</li>
     </ul>
+    <a href="stuff-table/example-table-attribute.html"> more example</a>
 
     <hr>
     <!-- structure -->
@@ -116,8 +123,8 @@
 
     <!-- example -->
     <h3>example table</h3>
-    <table border="1">
-        <thead>
+    <table border="1" cellspacing="5" cellpadding="10" width="50%">
+        <thead align="center" bgcolor="#ADFF2F">
             <th>No.</th>
             <th>Item</th>
             <th>Price</th>
@@ -125,7 +132,7 @@
             <th>picture</th>
             <th>link</th>
         </thead>
-        <tbody>
+        <tbody align="center">
             <tr>
                 <td>1</td>
                 <td>mouse</td>
@@ -135,7 +142,7 @@
                     <img src="https://th-media.apjonlinecdn.com/catalog/product/h/p/hp_240_bluetooth_mouse_jetblack_coreset_topdown_1.png" 
                     alt="mouse" widht="50px" height="50px">
                 </td>
-                <td>
+                <td rowspan="3">
                     <a href="#">link</a>
                 </td>
             </tr>
@@ -148,9 +155,7 @@
                     <img src="https://mediam.dotlife.store/media/catalog/product/cache/3b7e899159f673788675d87d1d929a98/k/e/keychron_k3.003_1.jpeg" 
                     alt="keyboard" widht="50px" height="50px">
                 </td>
-                <td>
-                    <a href="#">link</a>
-                </td>
+
             </tr>
             <tr>
                 <td>3</td>
@@ -161,22 +166,21 @@
                     <img src="https://f.ptcdn.info/044/070/000/qcy7264ianpzXIwiG6w-o.jpg" 
                     alt="cpu" widht="50px" height="50px">
                 </td>
-                <td>
-                    <a href="#">link</a>
-                </td>
+
             </tr>
         </body>
-        <tfoot>
+        <tfoot align="center" bgcolor="#FFFFF0">
             <tr>
-                <td>sum</td>
-                <td>-</td>
-                <td>-</td>
+                <td bgcolor="#F0E68C" colspan="2">sum</td>
+                <td>450</td>
                 <td>25</td>
-                <td>-</td>
-                <td>-</td>
+                <td colspan="2">-</td>
             </tr>
         </tfoot>
     </table>
+
+    <br><br>
+    <hr>
 
 
 
