@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13. Semantic (semantic form)</title>
+
+    <!-- reference css file -->
+    <link rel="stylesheet" href="table-style.css">
+    <!-- Code from Github ------------------------------------------------------------->
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        ul {
+          padding: 0;
+          list-style: none;
+        }
+  
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #333;
+          line-height: 1.4;
+        }
+  
+        #header {
+          margin-bottom: 15px;
+          background: #333;
+          color: #fff;
+          padding: 10px;
+        }
+  
+        #main {
+          float: left;
+          width: 69%;
+        }
+  
+        #sidebar {
+          float: right;
+          width: 29%;
+        }
+  
+        .clr {
+          clear: both;
+        }
+  
+        #footer {
+          background: #333;
+          color: #fff;
+          padding: 10px;
+        }
+  
+        .text-center {
+          display: block;
+          text-align: center;
+        }
+  
+        .card {
+          border: 1px solid #ddd;
+          background: #f4f4f4;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+    </style>
+    <!--------------------------------------------------------------------------------->
+
+</head>
+<body>
+    <!-- Code from Github ------------------------------------------------------------->
+    <!-- Header -->
+    <header id="header" class="card">
+      <h1>HEADER</h1>
+      <p>KongRuksiam Studio</p>
+    </header>
+  
+    <!-- Main Content -->
+    <main id="main">
+
+      <!-- Welcome Section -->
+      <section id="welcome" class="card">
+        <h2>ยินดีต้อนรับเข้าสู่เว็บไซต์</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          cupiditate itaque possimus numquam corporis odit deserunt voluptas
+          repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+          temporibus! Sed. <br />
+          <a href="#" class="text-center">ช่องยูทูป Kongruksiam</a>
+          <a href="#" class="text-center">แฟนเพจ Kongruksiam</a>
+        </p>
+      </section>
+
+
+      <!-- Blog Section -->
+      <section id="blog">
+        <h2>บทความ</h2>
+
+        <!-- Article One -->
+        <article class="article">
+          <h3>ท่องเที่ยว</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+            sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+            <a href="#">Click</a>
+          </p>
+        </article>
+
+        <hr>
+
+        <!-- Article Two -->
+        <article class="article">
+          <h3>ร้านอาหาร</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+            totam accusantium officiis!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+            sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+            <a href="#">Click</a>
+          </p>
+        </article>
+
+      </section>
+
+    </main>
+  
+      <!-- Sidebar-->
+    <aside id="sidebar" class="card">
+
+      <h3>เมนู</h3>
+
+      <!-- Navigation -->
+      <ul id="main-nav">
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">งานของเรา</a></li>
+      </ul>
+      
+      <hr>
+
+      <h3>ติดต่องาน</h3>
+      <ul>
+        <li><strong>ที่อยู่:</strong> 555 กรุงเทพ 10555</li>
+        <li><strong>เบอร์โทรศัพท์:</strong> (+66) 05-555-5555</li>
+        <li><strong>อีเมล:</strong> contact555@gmail.com</li>
+      </ul>
+
+    </aside>
+  
+    <div class="clr"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p class="text-center">Copyright &copy; KongRuksiam 2020</p>
+    </footer>
+
+
+    <!--------------------------------------------------------------------------------->
+    <div style="border:3px solid red">
+      <pre>
+        <h1>inspect semantic form</h1>
+        <code>
+          &lt;!DOCTYPE html&gt;
+          &lt;html lang=&quot;en&quot;&gt;
+            &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot; /&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+              &lt;title&gt;HTML5 Semantic&lt;/title&gt;
+              &lt;style&gt;
+                * {
+                  box-sizing: border-box;
+                }
+          
+                ul {
+                  padding: 0;
+                  list-style: none;
+                }
+          
+                body {
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: #333;
+                  line-height: 1.4;
+                }
+          
+                #header {
+                  margin-bottom: 15px;
+                  background: #333;
+                  color: #fff;
+                  padding: 10px;
+                }
+          
+                #main {
+                  float: left;
+                  width: 69%;
+                }
+          
+                #sidebar {
+                  float: right;
+                  width: 29%;
+                }
+          
+                .clr {
+                  clear: both;
+                }
+          
+                #footer {
+                  background: #333;
+                  color: #fff;
+                  padding: 10px;
+                }
+          
+                .text-center {
+                  display: block;
+                  text-align: center;
+                }
+          
+                .card {
+                  border: 1px solid #ddd;
+                  background: #f4f4f4;
+                  padding: 20px;
+                  margin-bottom: 10px;
+                }
+              &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;!-- Header --&gt;
+            <div style="background-color: #ADDFB3;">
+            &lt;header id=&quot;header&quot; class=&quot;card&quot;&gt;
+              &lt;h1&gt;HEADER&lt;/h1&gt;
+              &lt;p&gt;KongRuksiam Studio&lt;/p&gt;
+            &lt;/header&gt;
+            </div>
+            <div style="background-color: #F1EB9C;">
+            &lt;!-- Main Content --&gt;
+            &lt;main id=&quot;main&quot;&gt;
+              &lt;!-- Welcome Section --&gt;
+              <div style="background-color: #FCD299;">
+              &lt;section id=&quot;welcome&quot; class=&quot;card&quot;&gt;
+                &lt;h2&gt;ยินดีต้อนรับเข้าสู่เว็บไซต์&lt;/h2&gt;
+                &lt;p&gt;
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                  cupiditate itaque possimus numquam corporis odit deserunt voluptas
+                  repellat ad ex earum magnam mollitia magni eaque nisi, excepturi nam
+                  temporibus! Sed. &lt;br /&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;text-center&quot;&gt;ช่องยูทูป Kongruksiam&lt;/a&gt;
+                  &lt;a href=&quot;#&quot; class=&quot;text-center&quot;&gt;แฟนเพจ Kongruksiam&lt;/a&gt;
+                &lt;/p&gt;
+              &lt;/section&gt;
+              </div>
+              <div style="background-color: #FCD299;">
+              &lt;!-- Blog Section --&gt;
+              &lt;section id=&quot;blog&quot;&gt;
+                &lt;h2&gt;บทความ&lt;/h2&gt;
+                <div style="background-color: #DADADA;">
+                &lt;!-- Article One --&gt;
+                &lt;article class=&quot;article&quot;&gt;
+                  &lt;h3&gt;ท่องเที่ยว&lt;/h3&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                    totam accusantium officiis!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+                    sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+                    &lt;a href=&quot;#&quot;&gt;Click&lt;/a&gt;
+                  &lt;/p&gt;
+                &lt;/article&gt;
+                </div>
+                &lt;hr&gt;
+                <div style="background-color: #DADADA;">
+                &lt;!-- Article Two --&gt;
+                &lt;article class=&quot;article&quot;&gt;
+                  &lt;h3&gt;ร้านอาหาร&lt;/h3&gt;
+                  &lt;p&gt;
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                    totam accusantium officiis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                    veniam adipisci necessitatibus quia quisquam? Eligendi vitae quia
+                    totam accusantium officiis!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Quos quia enim corrupti veritatis deleniti culpa officia, sunt soluta, 
+                    sint fugiat perspiciatis! Suscipit quibusdam sit neque reprehenderit tempora illo vero aliquid.
+                    &lt;a href=&quot;#&quot;&gt;Click&lt;/a&gt;
+                  &lt;/p&gt;
+                &lt;/article&gt;
+                </div>
+              &lt;/section&gt;
+              </div>
+            &lt;/main&gt;
+            </div>
+            <div style="background-color: #FFC1CC;">
+            &lt;aside id=&quot;sidebar&quot; class=&quot;card&quot;&gt;
+              &lt;h3&gt;เมนู&lt;/h3&gt;
+              &lt;!-- Navigation --&gt;
+              &lt;ul id=&quot;main-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;หน้าแรก&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;เกี่ยวกับเรา&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;งานของเรา&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt; 
+              &lt;hr&gt;
+              &lt;h3&gt;ติดต่องาน&lt;/h3&gt;
+              &lt;ul&gt;
+                &lt;li&gt;&lt;strong&gt;ที่อยู่:&lt;/strong&gt; 555 กรุงเทพ 10555&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;เบอร์โทรศัพท์:&lt;/strong&gt; (+66) 05-555-5555&lt;/li&gt;
+                &lt;li&gt;&lt;strong&gt;อีเมล:&lt;/strong&gt; contact555@gmail.com&lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/aside&gt;
+            </div>
+            &lt;div class=&quot;clr&quot;&gt;&lt;/div&gt;
+            <div style="background-color: #C5B4E3;">
+            &lt;!-- Footer --&gt;
+            &lt;footer id=&quot;footer&quot;&gt;
+              &lt;p class=&quot;text-center&quot;&gt;Copyright &copy; KongRuksiam 2020&lt;/p&gt;
+            &lt;/footer&gt;
+            </div>
+            &lt;/body&gt;
+          &lt;/html&gt;
+        </code>
+      </pre>
+    </div>
+    
+      
+    <!-- Back -->
+    <br><br>
+    <div style="display:flex">  
+        <a href="../lesson-semantic-tags.html" style="width: 50px; height: 50px;">   <!--this is more responsive that set size directly in the picture-->
+            <img src="../../source/img/previous.png" alt="" width="100%" height="100%">
+        </a>
+        &nbsp;
+        <a href="../index.html">
+            <img src="../../source/img/home.png" alt="" width="50px" height="50px">
+        </a>
+    </div>
+
+</body>
+</html>
